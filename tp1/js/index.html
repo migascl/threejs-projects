@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Trabalho 1</title>
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>    
+    <script type="text/javascript" src="../node_modules/dat.gui/build/dat.gui.js"></script>    
+    <script type="text/javascript" src="../node_modules/three/build/three.js"></script>    
+    <script type="text/javascript" src="../node_modules/three/examples/js/controls/TrackballControls.js"></script>    
+    <script type="text/javascript" src="../node_modules/three/examples/js/controls/OrbitControls.js"></script>   
+    <script type="text/javascript" src="../node_modules/three/examples/js/controls/FirstPersonControls.js"></script>  
+    <script type="text/javascript" src="../node_modules/three/examples/js/controls/FlyControls.js"></script> 
+    <script type="text/javascript" src="../node_modules/three/examples/js/utils/SceneUtils.js"></script>    
+    <script type="text/javascript" src="box.js"></script>    
+    <script type="text/javascript" src="shelf.js"></script>
+    <script type="text/javascript" src="robot.js"></script>      
+    <script type="text/javascript" src="webgl.js"></script>    
+    <script type="text/javascript" src="gui.js"></script>
+    <style>
+        body {
+            /* set margin to 0 and overflow to hidden, to go fullscreen */
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<div id="Gui-output">
+</div>
+
+<!-- Div which will hold the Output -->
+<div id="WebGL-output">
+</div>
+
+<script type="text/javascript">
+
+$(function (){
+    let webgl = new Webgl();
+
+    let render = function (){
+        requestAnimationFrame(render);
+        webgl.render();
+    };    
+    render();
+});
+
+
+</script>
+</body>
+</html>
