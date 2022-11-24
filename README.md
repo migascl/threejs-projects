@@ -22,4 +22,4 @@ The project can be run by opening **.js/index.html**.
 
 ---
 
-_Made by Miguel Leirosa 2021_
+_Made by Miguel Leirosa, 2021_
